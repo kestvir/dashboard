@@ -1,0 +1,139 @@
+:root {
+  /*** COLORS ***/
+  --accent-color: #38354a;
+  --accent-dark-color: #2b2839;
+  --app-main-background-color: #eceff4;
+  --red-color: #fb434f;
+  --blue-color: #02a8fe;
+  --grey-medium-color: #697a84;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--accent-color);
+  min-width: 250px;
+}
+
+.sidebar-nav__brand-container {
+  height: 100px;
+  width: 100%;
+  background: var(--accent-dark-color);
+}
+
+.sidebar-nav__links {
+  padding: 0 1.5rem;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  background-color: var(--app-main-background-color);
+}
+
+.navbar-top {
+  display: flex;
+  background-color: #fff;
+  padding: 1.5rem;
+  min-height: 100px;
+}
+
+.rectangles-main-container {
+  display: grid;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.top-container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
+}
+
+.top-right-container {
+  display: grid;
+  gap: 1.5rem;
+  grid-auto-rows: 50px;
+}
+
+.rectangle {
+  background-color: #fff;
+  border-radius: 5px;
+  min-height: 100px;
+}
+
+.rectangle-1 {
+  grid-row: span 3;
+}
+
+.rectangle-2 {
+  grid-row: span 4;
+}
+
+.rectangle-3 {
+  grid-row: span 3;
+}
+
+.rectangle-4,
+.rectangle-5 {
+  grid-row: span 2;
+}
+
+/* .rectangle-6 {
+  grid-row: 4 / span 3;
+} */
+
+.middle-right-container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.bottom-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.bottom-contaner .rectangle {
+  min-height: 120px;
+}
+
+.background-red {
+  background-color: var(--red-color);
+}
+
+.background-blue {
+  background-color: var(--blue-color);
+}
+
+.background-accent {
+  background-color: var(--accent-color);
+}
+
+.background-darkGrey {
+  background-color: var(--grey-medium-color);
+}
