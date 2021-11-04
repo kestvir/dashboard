@@ -70,10 +70,25 @@ body {
   grid-auto-rows: 100px;
 }
 
-.nested-grid-1 {
+.nested-grid {
   display: grid;
   gap: 1.5rem;
-  grid-auto-rows: 50px;
+}
+
+.nested-grid-1 {
+  grid-auto-rows: 42px;
+}
+
+.nested-grid-2 {
+  grid-column: 2/-1;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1.5rem;
+}
+
+.nested-grid-3 {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 1rem;
 }
 
 .rectangle {
@@ -102,26 +117,6 @@ body {
 .rectangle-6 {
   grid-column: 1/2;
   grid-row: span 4;
-}
-
-.rectangle-7 {
-  margin-top: 1.5rem;
-  grid-column: 2/3;
-  grid-row: span 2;
-}
-
-.nested-grid-2 {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: 1fr 1fr;
-}
-
-.nested-grid-3 {
-  display: grid;
-  margin-top: 1.5rem;
-  gap: 1.5rem;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
 }
 
 .bottom-container {
