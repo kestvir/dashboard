@@ -91,12 +91,12 @@ body {
 }
 
 .rectangle-3 {
-  grid-row: span 3;
+  grid-row: span 4;
 }
 
 .rectangle-4,
 .rectangle-5 {
-  grid-row: span 2;
+  grid-row: span 3;
 }
 
 .rectangle-6 {
