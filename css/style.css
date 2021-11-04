@@ -22,7 +22,6 @@ body {
 
 .container {
   display: flex;
-  height: 100vh;
 }
 
 .sidebar-nav {
@@ -84,11 +83,11 @@ body {
 }
 
 .rectangle-1 {
-  grid-row: span 3;
+  grid-row: span 4;
 }
 
 .rectangle-2 {
-  grid-row: span 4;
+  grid-row: span 5;
 }
 
 .rectangle-3 {
@@ -102,13 +101,19 @@ body {
 
 .rectangle-6 {
   grid-column: 1/2;
-  grid-row: span 3;
+  grid-row: span 4;
 }
 
 .rectangle-7 {
   margin-top: 1.5rem;
   grid-column: 2/3;
   grid-row: span 2;
+}
+
+.nested-grid-2 {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
 }
 
 .nested-grid-3 {
